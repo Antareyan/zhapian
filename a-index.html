@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>购物流程</title>
+		<style>
+			.image_list{
+				position:relative; 
+               background-image:url("img/bg.jpg" ) ;
+               height: 700px;
+               width: 1280px;
+               background-repeat: no-repeat;
+               margin: auto;
+			}
+			#che{
+				position: relative;
+				width: 150px;
+				top: 200px;
+				left: -270px;
+				height: 150px;
+			}
+			#che2{
+				position: relative;
+				width: 190px;
+				top: 190px;
+				left: -220px;
+				height: 125px;
+			}
+			#tui{
+				position: relative;
+				width: 125px;
+				top: 200px;
+				left: -150px;
+				height: 140px;
+				}
+				#tiao1{
+					position: relative;
+					top: 300px;
+					left: 350px;
+					width: 600px;
+				}
+		</style>
+	</head>
+	<span style="font-size:24px;"><style type="text/css">
+		body{    
+			overflow-x: hidden;    
+ 			overflow-y: hidden; 
+     	 }    
+		</style></span>
+	<body>
+		<div class="image_list">
+			<img src="img/tiao1.png" id="tiao1" />
+			<a href="b-index.html"><img src="img/che.png"  id="che"onmouseover="d1()" onmouseout="p1()"/></a>
+			<a href="c-index.html"><img src="img/che2.png" id="che2"onmouseover="d2()" onmouseout="p2()" /></a>
+			<a href="d-index.html"><img src="img/tui.png"  id="tui"onmouseover="d3()" onmouseout="p3()"/></a>
+			
+		</div>
+		<script type="text/javascript">
+        function d1(){
+        	var img = document.getElementById('che');
+        	img.style.width = '175px';
+    		img.style.height = '175px';
+        }
+        function d2(){
+        	var img2 = document.getElementById('che2'); 
+        	img2.style.width = '210px';
+    		img2.style.height = '150px';
+        }
+        function d3(){
+        	var img = document.getElementById('tui'); 
+        	img.style.width = '155px';
+    		img.style.height = '160px';
+        }
+        function p1(){
+        	var img = document.getElementById('che'); 
+        	img.style.width = '150px';
+    		img.style.height = '150px';
+        }
+        function p2(){
+        	var img = document.getElementById('che2'); 
+        	img.style.width = '190px';
+    		img.style.height = '125px';
+        }
+        function p3(){
+        	var img = document.getElementById('tui'); 
+        	img.style.width = '125px';
+    		img.style.height = '140px';
+        }
+      </script>
+	</body>
+</html>
